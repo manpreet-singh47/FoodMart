@@ -1,0 +1,578 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+height: 100vh;
+width: 100%;
+position: relative;
+}
+#cursor{
+    position: fixed;
+    background-color:orangered;
+    height: 15px; 
+    width: 15px;  
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.3s linear;
+}
+#header{
+    position: relative;
+    /* background-color: antiquewhite; */
+    height: 70px;
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+#header input{
+    height: 33px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    
+}
+#credientials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#credientials .icons {
+    height: 25px;
+    margin-right: 20px;
+}
+#header button{
+    height: 33px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    padding:10px;
+    text-align: center;
+    background-color: skyblue;
+    color: #fff;
+    font-weight: 600;
+}
+
+#header h1{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+#first{
+    color: #111;
+    margin-left: 20px;
+}
+#second{
+    color: rgb(243, 207, 5);
+}
+body{
+    height: 100vh;
+}
+#header h5{
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 7px;
+    margin-left: 22px;
+    color: gray;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1%;
+}
+.cards{
+    height: 270px;
+    width: 95%;
+    border-radius: 15px;
+    margin-top: 2%;
+}
+#firstcard{
+    background-color: skyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20px;
+}
+#firstcard h1{
+    width: 350px;
+    font-size: 33px;
+    margin: 20px;
+    color: #333;
+    font-weight: 600;
+    line-height: 50px;
+    width: 700px;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+ul li a{
+    color: #333;
+}
+#h5{
+    width: 350px;
+    margin: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #333;
+    margin-top: -15px;
+    width: 300px;
+}
+#quality{
+    margin-top: 80px;
+    margin-bottom: -15px;
+    margin-left: 20px;
+    color: #333;
+    font-weight: 500;
+    font-size: 13px;
+    border-bottom: 4px solid gold;
+    width: 95px;
+}
+#hero{
+    width: 95%;
+    height: 450px;
+    margin-left: 2.5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+} 
+#hero p {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:rgba(255, 166, 0, 0.491) ;
+    border-top-left-radius:  50px;
+    border-bottom-right-radius:  50px;
+    width: 1100px;
+    height: 55px;
+
+}
+#hero img {
+    margin-top: 10px;
+    height: 450px;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.4s all ease-in-out;
+}
+#hero img:hover{
+    filter: saturate(2);
+    filter: blur(4px);
+}
+#hero h2{
+    position: absolute;
+    top: 30%;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    padding-block: 5px;
+    padding-inline: 5px;
+    width: 700px;
+    background-color:rgba(255, 166, 0, 0.491) ;
+    border-top-left-radius:  50px;
+    border-bottom-right-radius:  50px;
+    font-size: 30px;
+    border: none;
+    opacity: 1;
+    text-align: center;
+    transition: opacity 0.4s ease-in-out;
+}
+#hero button {
+    position: absolute;
+    padding-block: 15px;
+    padding-inline: 25px;
+    border-top-right-radius:  15px;
+    border-bottom-left-radius:  15px;
+    border: none;
+    background-color:rgba(255, 166, 0, 0.491) ;
+    color: #fff;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    margin-top: 150px;
+    cursor: pointer;
+}
+#hero:hover button{
+    opacity: 1;
+}
+#container1{
+    margin-top: -60px;
+    width: 99%;
+}
+#container1 img {
+    float: right;
+    margin-top: -275px;
+    object-fit: cover;
+    object-position: center;
+    height: 370px;
+    margin-right: -150px;
+    filter:contrast(1);
+    background-color: skyblue;
+    rotate: 36deg;
+    background: transparent;
+    filter: saturate(2) drop-shadow(0px 0px 5px #333);
+    scale: 1;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    z-index: 7;
+}
+#firstcard h3 {
+    width: 350px;
+    margin: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 600;
+    margin-top: -5px;
+    border: 1px solid #333;
+    width: 130px;
+    border-radius: 8px;
+    padding: 8px;
+    color: #333;
+}
+#container1:hover img{
+    scale: 1.6;
+    margin-right:100px ;
+    rotate: -26deg;
+    z-index: 18;
+    filter:drop-shadow(0px 0px 10px #333) saturate(2)
+}
+#secondcard{
+    background-color: lightgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20px;
+}
+#secondcard img {
+    float: right;
+    height: 300px;
+    margin-top:  -243px;
+    margin-right: -15px;
+    object-fit: cover;
+    object-position: center;
+    filter:contrast(1);
+    rotate: 0deg;
+    background: transparent;
+    filter: saturate(2) drop-shadow(0px 0px 2px #fff);
+    scale: 0.88;
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}
+#container2:hover img{
+    scale: 1.5;
+    margin-right:170px ;
+    rotate: 360deg;
+    filter:drop-shadow(0px 0px 2px #fff) saturate(2)
+}
+#secondcard h1{
+    width: 350px;
+    font-size: 33px;
+    margin: 20px;
+    color: #333;
+    font-weight: 600;
+    line-height: 50px;
+}
+.shop{
+    width: 350px;
+    margin: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #333;
+    margin-top: -15px;
+    width: 300px;
+    cursor: pointer;
+}
+.discount{
+    font-weight: 500;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-bottom: 4px solid gold;
+    width: 60px;
+    color: #333;
+    font-size: 13px;
+
+}
+#thirdcard{
+    background-color: rgba(222, 184, 135, 0.842);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20px;
+}
+#thirdcard h1{
+    width: 350px;
+    font-size: 33px;
+    margin: 20px;
+    color: #333;
+    font-weight: 600;
+    line-height: 50px;
+}
+#container3{
+    margin-top: 70px;
+    width: 100%;
+}
+#container3 img {
+    float: right;
+    height: 300px;
+    margin-top:  -250px;
+    margin-right: 39px;
+    object-fit: cover;
+    object-position: center;
+    filter:contrast(1);
+    rotate: 180deg;
+    background: transparent;
+    filter: saturate(2) drop-shadow(0px 0px 3px #fff);
+    scale: 2;
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}
+#container3:hover img{
+    scale: 3;
+    margin-top: -200px;
+    margin-right:170px ;
+    rotate: 360deg;
+    filter:drop-shadow(0px 0px 6px #fff) saturate(2)
+}
+
+
+/* Login Page  */
+
+#Background{
+    background:#e4e4e4;
+    background-position: center;
+    background-size: cover;
+    filter:contrast(10px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#HeaderAccount{
+    position: fixed;
+    top: 0;
+    background:transparent;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#NavAccount{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+#NavAccount a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+#NavAccount a::after{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    transform: translateY(10px);
+    transition: .5s;
+    opacity: 0;
+}
+#NavAccount a:hover::after{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.ContainerAccount{
+    height: 550px;
+    width: 75%;
+    background: url('images/ananthu-ganesh-gWzmrNBd17E-unsplash.jpg');
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 20px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+.ContainerAccount .ContentAccount{
+    width: 58%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:transparent;
+    padding: 80px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.ContainerAccount .RightAccount{
+    width: calc(100% - 58%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#Logo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 900;
+}
+#Logo span{
+    font-size: 30px;
+    color: goldenrod;
+    font-weight: 900;
+}
+#TextAccount h2{
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 900;
+}
+#TextAccount h2 span {
+    font-size: 25px;
+    font-weight: 900;
+}
+#TextAccount p{
+    font-size: 16px;
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.RightAccount .FormAccount {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #e4e4e4;
+}
+.RightAccount .FormAccount.Register{
+    transform: translateX(630px);
+    position:absolute;
+    top: 0;
+    transition: transform 0.5s ease;
+    
+   
+}
+.RightAccount .FormAccount.Login {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+    transition-delay: 0.7s;
+}
+.RightAccount.active .FormAccount.Login {
+    transform: translateX(630px);
+    transition-delay: 0s;
+   
+}
+.RightAccount.active .FormAccount.Register{
+    transform: translateX(0px);
+    transition-delay: 0.7s;
+}
+.FormAccount h2{
+    font-size: 32px;
+    text-align: center;
+}
+.FormAccount #InputBoxAccount{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+
+    position: relative;
+}
+#InputBoxAccount input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;  
+    color: #e4e4e4;  
+    font-size: 16px;
+    font-weight: 500;
+}
+#InputBoxAccount label{
+    position: relative;
+    top: -80%;
+    transform: translate(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+    padding-right: 28px;
+}
+#InputBoxAccount input:focus~label,
+#InputBoxAccount input:valid~label{
+    top:-60px;
+}
+#Remember-Forgot{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display:flex ;
+    justify-content: space-between;
+}
+#Remember-Forgot label input {
+    accent-color: #e4e4e4;
+    margin-right: 3px; 
+}
+#Remember-Forgot a {
+    color: #e4e4e4;
+    text-decoration: none;
+}
+#Remember-Forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: #c4103d;
+border: none;
+outline: none;
+color: #e4e4e4;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+font-weight: 500;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#RegisterAccount {
+    font-size: 14.5px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 25px;
+}
+#RegisterAccount a {
+    color: #e4e4e4;
+    text-decoration: none;
+}
+#RegisterAccount a:hover{
+    text-decoration: underline;
+}
